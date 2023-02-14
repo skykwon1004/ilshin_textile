@@ -352,178 +352,114 @@ font-size: 30px; */
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* main_visual */
-.main_visual {
-    position: relative;
-}
-
-.main_visual .main_slide figure {
-    position: relative;
-    height: 100vh;
-}
-
-.main_visual .slide_itm01 {
-    background: url(../img/main01.jpg)no-repeat center center/cover;
-}
-
-.main_visual .slide_itm02 {
-    background: url(../img/main02.jpg)no-repeat center center/cover;
-}
-
-.main_visual figure .inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    line-height: 1.4;
-
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-}
-
-.main_visual figure .inner strong {
-    display: block;
-    font-size: 25px;
-    font-weight: 300;
-    /* color: #a69381; */
-    margin: 0 0 25px 0;
-}
-
-/* .main_visual figure .inner strong::after {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    background: #dc3545;
-    border-radius: 50%;
-    margin: 0 0 0 10px;
-} */
-
-.main_visual figure .inner h2 {
-    font-size: 45px;
-    font-weight: 500;
-    margin: 0 0 50px 0;
-}
-
-.main_visual figure .inner p {
-    font-size: 21px;
-    /* font-weight: 300; */
-}
-
-.main_visual .scroll {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    color: #fff;
-    font-size: 15px;
-    font-weight: 300;
-    /* letter-spacing: 0.2em; */
-
-    opacity: 0.9;
-}
-
-
-.main_visual .scroll i {
-    position: absolute;
-    bottom: -32px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: block;
-    font-size: 21px;
-    animation: motion 0.5s
-        /* 속도 */
-        linear 0s
-        /* 처음부터 끝까지 일정 속도로 진행 */
-        infinite alternate;
-    /* 무한 반복 */
-}
-
-@keyframes motion {
-    0% {
-        margin-bottom: 0px;
-    }
-
-    /* 처음 위치 */
-
-
-    100% {
-        margin-bottom: 5px;
-    }
-
-    /* 마지막 위치 */
-}
-
-
-.inner_arrows {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 1200px;
-    height: 100px;
-    margin: 0 auto;
-    padding: 0 15px;
-    /* outline: 1px solid green; */
-    z-index: 999;
-}
-
-.main_visual .arrows i {
-    position: absolute;
-    bottom: 0;
-    right: 15px;
-    transform: translate(0, 0);
-    font-size: 31px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.main_visual .arrows i:first-child {
-    position: absolute;
-    right: 76px;
-    padding: 15px;
-    background: #a69381;
-}
-
-.main_visual .arrows i:last-child {
-    padding: 15px;
-    background: #f9f9f9;
-    color: #a69381;
-}
-
-
-
 /* mainProducts */
+.mainProducts {
+    position: relative;
+    margin: 100px 0 150px 0;
+}
+
 .mainProducts .product_slide figure {
-    height: 500px;
+    filter: grayscale(1) brightness(1);
+}
+
+.mainProducts .product_slide figure.slick-center {
+    filter: grayscale(0);
 }
 
 .mainProducts .product_slide figure img {
     margin: 0 auto;
 }
 
+.mainProducts .content {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(150%, 0);
+    margin: 0 0 0 -600px;
+    width: 400px;
+    background: #fff;
+    border: 1px solid #eee;
+    margin: 0 0 0 -500px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mainProducts .port {
+    display: none;
+    padding: 50px 40px 50px 40px;
+    text-align: left;
+}
+
+.mainProducts .port.on {
+    display: block;
+}
+
+.mainProducts .tit_e {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--mc);
+    margin: 0 0 10px 0;
+    text-indent: 4px;
+}
+
+.mainProducts .tit {
+    font-size: 31px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.mainProducts .desc {
+    line-height: 1.4;
+    word-break: keep-all;
+    margin: 0 0 30px 0;
+    min-height: 50px;
+    font-weight: 300;
+}
 
 
+.mainProducts .port a {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    color: #999;
+    transition: 0.5s;
+}
 
+.mainProducts .port a:hover {
+    transform: translate(10px, 0);
+}
 
+.mainProducts .port a::before {
+    content: '';
+    margin-right: 12px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--mc);
+}
 
+.mainProducts .pro_list {
+    position: relative;
+}
 
+.mainProducts .arrows i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 20px 50px;
+    font-size: 50px;
+    color: #888;
+}
 
+.mainProducts .arrows i:nth-child(1) {
+    margin: 0 0 0 -650px;
+}
 
-
-
-
-
+.mainProducts .arrows i:nth-child(2) {
+    margin: 0 0 0 650px;
+}
 
 
 

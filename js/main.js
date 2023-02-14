@@ -60,8 +60,25 @@ $(function () {
         arrows: false,
         centerMode: true,
         centerPadding: '300px',
-        dots: true,
+        dots: false,
     });
+
+    $('.product_slide').on('init reInit afterChange', function (e, s, c) {
+        $('.mainProducts .port').eq(c).addClass('on').siblings().removeClass('on');
+    });
+
+    
+    $('.mainProducts .arrows i:first-child').on('click', function () {
+        $('.product_slide').slick('slickPrev')
+    });
+
+
+    $('.mainProducts .arrows i:last-child').on('click', function () {
+        $('.product_slide').slick('slickNext')
+    });
+
+
+
 
 
     //참고
@@ -71,21 +88,21 @@ $(function () {
         $('.build .num span').text('0' + (c ? c + 1 : 1));
         $('.build .num strong').text('0' + s.slideCount)
     });
-    
-    
+
+
     $('.buildSlide').slick({
         arrows: false,
         centerMode: true,
         centerPadding: '300px',
         dots: true,
     });
-    
-    
+
+
     $('.build .arrows .left').on('click', function () {
         $('.buildSlide').slick('slickPrev')
     });
-    
-    
+
+
     $('.build .arrows .right').on('click', function () {
         $('.buildSlide').slick('slickNext')
     });
