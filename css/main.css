@@ -3,7 +3,7 @@
 }
 
 :root {
-    --mc: #d13a2a;
+    --mc: #d1392b;
 }
 
 .mz {
@@ -72,6 +72,29 @@ button {
     border: none;
     outline: none;
 }
+
+.more {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    color: #999;
+    transition: 0.5s;
+}
+
+.more:hover {
+    transform: translate(10px, 0);
+}
+
+.more::before {
+    content: '';
+    margin-right: 12px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--mc);
+}
+
 
 /* header */
 .header {
@@ -180,6 +203,23 @@ button {
 }
 
 
+.header .xi-bars {
+    z-index: 1001;
+}
+
+.header .sitemap {
+    width: 100%;
+    height: 100vh;
+    background: #68584f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    overflow: hidden;
+}
+
+
 /* mainVisual */
 .mainVisual {
     position: relative;
@@ -193,7 +233,7 @@ button {
     background-repeat: no-repeat;
 
     background-size: 150% auto;
-    transition: 8s;
+    transition: 4s;
 }
 
 .mainVisual .main_slide figure.on {
@@ -352,10 +392,51 @@ font-size: 30px; */
 
 
 
+/* mainBrand */
+.mainBrand {
+    /* outline: 1px solid red; */
+}
+
+.mainBrand .inner {
+    display: flex;
+}
+
+.mainBrand .inner>* {
+    flex: 1;
+}
+
+.mainBrand .br_left {
+    padding: 30px 50px 30px 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    /* outline: 1px solid red; */
+}
+
+.mainBrand .tit strong {
+    display: block;
+    font-size: 47px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+.mainBrand .tit span {
+    display: block;
+    font-size: 17px;
+    margin: 0 0 30px 0;
+    line-height: 1.45;
+    color: #707070;
+    word-break: keep-all;
+}
+
+
+
+
 /* mainProducts */
 .mainProducts {
     position: relative;
-    margin: 100px 0 150px 0;
+    padding: 100px 0 150px 0;
 }
 
 .mainProducts .product_slide figure {
@@ -415,29 +496,6 @@ font-size: 30px; */
     font-weight: 300;
 }
 
-
-.mainProducts .port a {
-    position: relative;
-    display: inline-block;
-    font-size: 13px;
-    color: #999;
-    transition: 0.5s;
-}
-
-.mainProducts .port a:hover {
-    transform: translate(10px, 0);
-}
-
-.mainProducts .port a::before {
-    content: '';
-    margin-right: 12px;
-    vertical-align: middle;
-    display: inline-block;
-    width: 30px;
-    height: 2px;
-    background-color: var(--mc);
-}
-
 .mainProducts .pro_list {
     position: relative;
 }
@@ -451,6 +509,7 @@ font-size: 30px; */
     padding: 20px 50px;
     font-size: 50px;
     color: #888;
+    cursor: pointer;
 }
 
 .mainProducts .arrows i:nth-child(1) {
@@ -460,6 +519,147 @@ font-size: 30px; */
 .mainProducts .arrows i:nth-child(2) {
     margin: 0 0 0 650px;
 }
+
+
+/* mainNews */
+.mainNews {
+    position: relative;
+}
+
+.mainNews .more {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-100%, 0);
+    margin: 0 0 0 600px;
+    transition: 0.5s;
+}
+
+.mainNews .more:hover {
+    transform: translate(-90%, 0);
+}
+
+.mainNews .news_box {
+
+    display: flex;
+    gap: 30px;
+}
+
+.mainNews .news_box>* {
+    flex: 1;
+}
+
+.mainNews .news_itm a {
+    display: block;
+    background: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    padding: 50px;
+    transition: 0.5s;
+
+}
+
+.mainNews .news_itm a:hover {
+    border: 1px solid var(--mc);
+}
+
+.mainNews .news_itm strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    color: var(--mc);
+}
+
+.mainNews .news_itm span {
+    display: block;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    min-height: 45px;
+    line-height: 1.4;
+    /* outline: 1px solid red;  */
+    word-break: keep-all;
+}
+
+.mainNews .news_itm p {
+    line-height: 1.4;
+
+    /* outline: 1px solid red; */
+    max-height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    margin: 0 0 40px 0;
+    color: #777;
+    font-weight: 300;
+}
+
+.mainNews .news_itm em {
+    font-size: 13px;
+    color: var(--mc);
+}
+
+
+
+
+
+
+
+
+
+/* mainRecruit */
+.mainRecruit {
+    background: url(../img/recruit.jpg)no-repeat center center/cover;
+}
+
+.mainRecruit .text  h2 {
+    color: #fff;
+}
+
+.mainRecruit .text p {
+    color: #fff;
+    margin: 0 0 60px 0;
+}
+
+.mainRecruit .re_tit {
+    display: flex;
+    gap: 100px;
+    /* outline: 1px solid red; */
+}
+
+.mainRecruit .re_tit a {
+    /* display: block; */
+    width: 225px;
+    height: 225px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.mainRecruit .tit {
+    padding: 69px;
+    border-radius: 50%;
+    /* outline: 1px solid red; */
+}
+
+.mainRecruit .tit i {
+    display: block;
+    font-size: 47px;
+    margin: 0 0 20px 0;
+    color: var(--mc);
+}
+
+.mainRecruit .tit p {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+
+
+
 
 
 
@@ -472,10 +672,9 @@ font-size: 30px; */
 /* footer */
 
 .footer {
-    padding: 50px 0;
+    padding: 40px 0;
     text-align: center;
-    background: #716e6a;
-    color: #ccc;
+    background: #ddd;
 }
 
 .footer_inner {
@@ -484,25 +683,16 @@ font-size: 30px; */
 }
 
 .footer .top {
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #bbb;
 }
 
 .footer .top img {
-    margin: 0 0 50px 0;
-}
-
-.footer .top ul {
-    display: flex;
-    justify-content: center;
-    font-size: 17px;
-    font-weight: 500;
     margin: 0 0 20px 0;
 }
 
 .footer .top p {
     font-size: 14px;
-    font-weight: 300;
-    margin: 0 0 30px 0;
+    margin: 0 0 40px 0;
     line-height: 1.4;
     word-break: keep-all;
 }
@@ -515,7 +705,6 @@ font-size: 30px; */
     display: flex;
     justify-content: center;
     font-size: 14px;
-    font-weight: 300;
     margin: 0 0 15px 0;
 }
 
@@ -562,16 +751,16 @@ font-size: 30px; */
 /* to top */
 .to_top {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 0;
+    right: 100px;
     z-index: 1001;
 }
 
-.to_top i {
-    padding: 15px;
+.to_top .top {
+    padding: 20px;
     font-size: 21px;
-    background: #a69381;
-    border-radius: 50%;
+    background-image: linear-gradient(-60deg, #d63384, var(--mc));
+    /* border-radius: 50%; */
     color: #fff;
 
     cursor: pointer;
@@ -579,12 +768,25 @@ font-size: 30px; */
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
+    text-align: center;
 }
 
-.to_top.on i {
+.to_top .top i {
+    margin: 0 0 10px 0;
+}
+
+.to_top .top p {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-indent: 5px;
+}
+
+.to_top.on .top {
     opacity: 1;
     visibility: visible;
 }
+
+.to_top p {}
 
 
 @media (max-width:768px) {

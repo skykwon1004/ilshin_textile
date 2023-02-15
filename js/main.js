@@ -9,6 +9,17 @@ $(function () {
         }
     });
 
+
+
+    // sitemap
+    $('.xi-bars').on('click', function () {
+        $('.sitemap').slideToggle();
+    })
+
+
+
+    // main_slid
+
     $('.main_slide').on('init afterChange', function (e, s, c) {
         // c = 0,1,2
         var current = $('.main_slide .slick-current');
@@ -67,7 +78,7 @@ $(function () {
         $('.mainProducts .port').eq(c).addClass('on').siblings().removeClass('on');
     });
 
-    
+
     $('.mainProducts .arrows i:first-child').on('click', function () {
         $('.product_slide').slick('slickPrev')
     });
