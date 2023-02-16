@@ -12,11 +12,12 @@ $(function () {
 
 
     // sitemap
-    $('.xi-bars').on('click', function () {
-        $('.sitemap').slideToggle();
+    $('.bars').on('click', function () {
+        $('.sitemap').toggleClass('on')
+        $('.bars').toggleClass('on')
+        $('body').toggleClass('on')
+        // $('.lang').toggleClass('on')
     })
-
-
 
     // main_slid
 
