@@ -202,14 +202,12 @@ button {
     top: 0;
     left: 50%;
     transform: translate(-100%, 0);
-    margin: 0 0 0 850px;
+    margin: 0 0 0 840px;
     content: "\e921";
     color: #333;
 }
 
 .header .sitemap {
-    width: 100%;
-    height: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -221,25 +219,29 @@ button {
     justify-content: center;
     align-items: center;
     color: #333;
+
+    width: 100%;
+    height: 0;
 }
 
 .header .sitemap.on {
-    width: 100%;
-    height: 100vh;
-    background: url(../img/sitemap.png) no-repeat right 50px bottom 50px #f9f9f9;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     overflow: hidden;
+
+    width: 100%;
+    height: 100vh;
+    background: url(../img/sitemap.png) no-repeat right 50px bottom 50px #f9f9f9;
 }
 
 .header .sitemap .sitemap_list {
     display: flex;
     gap: 80px;
+    justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
-    justify-content: space-between;
 }
 
 .header .sitemap .sitemap_list>li {
@@ -290,8 +292,8 @@ button {
     text-decoration: underline;
 }
 
-body.on {
-    overflow: hidden;
+body.on::-webkit-scrollbar {
+    display: none;
 }
 
 /* mainVisual */
