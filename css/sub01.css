@@ -1,47 +1,91 @@
-#subPage {
-
-}
-
+/* subPage head 고정 */
 #subPage .subBanner {
-    height: 400px;
+    height: 420px;
     background: url(../img/bg_subheader_01.jpg)no-repeat center center/cover;
 }
 
-#subPage .subBanner .inner {
+#subPage .subBanner .sub_wrap {
     color: #fff;
     padding: 160px 0;
+    height: 420px;
 }
 
-#subPage .subBanner .inner .text p {
+#subPage .subBanner .sub_wrap .sub_text {
+    text-align: center;
+}
+
+#subPage .subBanner .sub_wrap .sub_text h2 {
+    position: relative;
+    font-size: 49px;
+    font-weight: 500;
+    margin: 0 0 40px 0;
+}
+
+#subPage .subBanner .sub_wrap .sub_text h2::after {
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #fff;
+}
+
+#subPage .subBanner .sub_wrap .sub_text p {
+    font-size: 19px;
+    line-height: 1.4;
     color: #fff;
+    margin: 0 0 84px 0;
 }
 
 #subPage .sub_menubar {
+    background: rgb(209, 57, 43, 0.8);
+    line-height: 60px;
+}
+
+#subPage .sub_menubar .inner {
     display: flex;
-    line-height: 50px;
-    background: var(--mc);
+
 }
 
 #subPage .sub_menubar .home i {
-    font-size: 21px;
+    font-size: 22px;
+    vertical-align: middle;
+    padding: 0 30px 0 0;
 }
-
-
 
 #subPage .sub_gnb {
     position: relative;
 }
 
 #subPage .sub_gnb .btn {
-    line-height: 40px;
-    border-right: 1px solid #ddd;
-    border-left: 1px solid #ddd;
+    line-height: 60px;
+    height: 60px;
+    border-right: 1px solid rgb(204, 204, 204, 0.2);
+    border-left: 1px solid rgb(204, 204, 204, 0.2);
     padding: 0 30px;
+
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#subPage .sub_gnb .btn02 {
+    line-height: 60px;
+    height: 60px;
+    border-left: none;
+    border-right: 1px solid rgb(204, 204, 204, 0.2);
+    padding: 0 30px;
+
+    font-size: 19px;
+    font-weight: 400;
 }
 
 #subPage .sub_gnb .btn i {
-    margin: 0 0 0 15px;
-    color: tomato;
+    margin: 0 0 0 50px;
+    font-size: 15px;
+    color: #fff;
 }
 
 #subPage .sub_gnb .btn.on i {
@@ -50,19 +94,143 @@
 
 #subPage .sub_gnb ul {
     position: absolute;
-    top: 40px;
+    top: 60px;
     left: 0;
     right: 0;
-    background: #333;
+    background: rgb(209, 57, 43, 0.8);
     color: #fff;
 
     display: none;
-    height: 150px;
-    overflow-y: auto;
+}
+
+#subPage .sub_gnb ul li {
+    line-height: 30px;
 }
 
 #subPage .sub_gnb ul a {
     display: block;
     padding: 10px 30px;
-    border-bottom: 1px solid #ddd;
+}
+
+/* subPage head 끝 */
+
+
+
+/* subContainer */
+.content .text .con_text_h2 {
+    padding: 100px 0 0 0;
+}
+
+.content .content_company {
+    border-top: 1px solid #eee;
+}
+
+.content .content_company p {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 100px 0;
+    word-break: break-all;
+}
+
+.content .content_company p b {
+    color: var(--mc);
+}
+
+
+.content .content_company figure {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.content .con_ilshin .con_text {
+    display: flex;
+    box-shadow: 10px 30px 50px rgb(0 0 0 / 8%);
+    text-align: left;
+    justify-content: space-between;
+}
+
+.content .con_ilshin .con_text>* {
+    flex: 1;
+}
+
+.content .con_ilshin .con_text strong {
+    font-size: 23px;
+    font-weight: 300;
+    display: block;
+    margin: 0 0 40px 0;
+    line-height: 1.4;
+}
+
+.content .con_ilshin .con_text span {
+    font-size: 17px;
+    font-weight: 300;
+    display: block;
+    /* outline: 1px solid red; */
+    word-break: keep-all;
+    line-height: 1.4;
+}
+
+.con_text_left {
+    padding: 100px 50px;
+    background: #fff;
+    border-top: 4px solid #ff4646;
+    border-right: 1px solid #f1f1f1;
+}
+
+.con_text_right {
+    padding: 100px 50px;
+    background: #fff;
+    border-top: 4px solid #333333;
+    border-right: none;
+}
+
+
+
+/* content_ceo */
+.content_ceo {
+    padding: 100px 0 0 0;
+}
+
+.content_ceo .text p {
+}
+
+.content_ceo .con_ceo_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+}
+
+.content_ceo .con_ceo_wrap>* {
+    flex: 1;
+}
+
+.content_ceo .con_ceo_wrap .ceo_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 0 60px 0 0;
+}
+
+.content_ceo .con_ceo_wrap .ceo_left p {
+    word-break: keep-all;
+    margin: 0 0 30px 0;
+}
+
+.content_ceo .con_ceo_wrap .ceo_left .p03 {
+    margin: 0 0 70px 0;
+}
+
+.content_ceo .con_ceo_wrap .ceo_left .p04 {
+    font-size: 21px;
+}
+
+.content_ceo .con_ceo_wrap .ceo_left .p04 b {
+    font-weight: 500;
+    margin: 0 0 0 50px;
 }
