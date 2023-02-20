@@ -36,7 +36,7 @@
     font-size: 19px;
     line-height: 1.4;
     color: #fff;
-    margin: 0 0 84px 0;
+    margin: 0 0 85px 0;
 }
 
 #subPage .sub_menubar {
@@ -112,10 +112,20 @@
     padding: 10px 30px;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* subPage head 끝 */
 
 
-
+/* sub01 */
 /* subContainer */
 .content .text .con_text_h2 {
     padding: 100px 0 0 0;
@@ -187,13 +197,9 @@
 }
 
 
-
 /* content_ceo */
 .content_ceo {
     padding: 100px 0 0 0;
-}
-
-.content_ceo .text p {
 }
 
 .content_ceo .con_ceo_wrap {
@@ -233,4 +239,92 @@
 .content_ceo .con_ceo_wrap .ceo_left .p04 b {
     font-weight: 500;
     margin: 0 0 0 50px;
+}
+
+
+/* sub02 */
+.content_history {
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+/* .content_history h3 {
+    font-size: 19px;
+    font-weight: 300;
+    margin: 0 0 50px 0;
+    color: #333;
+    padding: 30px 50px;
+    display: inline-block;
+    border: 1px solid #ddd;
+} */
+
+.content_history figure img {
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    padding: 20px 50px;
+    margin: 0 0 50px 0;
+}
+
+
+.history_warp {
+    position: relative;
+}
+
+.history_warp::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    margin: 0 auto;
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+}
+
+.history_itm dl>dt {
+    position: relative;
+}
+
+.history_itm dl .left::before {
+    position: absolute;
+    top: 0;
+    right: -46px;
+    content: "";
+    width: 21px;
+    height: 21px;
+    background: url(../img/history_marker.png)no-repeat center center/cover;
+}
+
+.history_itm dl .right::before {
+    position: absolute;
+    top: 0;
+    left: -45px;
+    content: "";
+    width: 21px;
+    height: 21px;
+    background: url(../img/history_marker.png)no-repeat center center/cover;
+}
+
+.history_itm dl {
+    width: 100%;
+    padding-right: calc( 50% + 35px );
+    text-align: right;
+    margin: 0 0 70px 0;
+}
+
+.history_itm dl:nth-child(even) {
+    padding-right: 0;
+    padding-left: calc( 50% + 35px );
+    text-align: left;
+}
+
+
+.history_itm dl>dt {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.history_itm dl>dd {
+    color: #777;
 }
