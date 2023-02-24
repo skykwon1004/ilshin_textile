@@ -101,6 +101,37 @@ $(function () {
 
 
 
+    // $('.yarn_slide').slick({
+    //     arrows: true,
+    //     dots: false,
+    //     slidesToShow: 5,
+    // });
+
+    // $('.mainProduct .arrows .prev').on('click', function () {
+    //     $('.main_pro_slide').slick('slickPrev')
+    // });
+
+    // $('.mainProduct .arrows .next').on('click', function () {
+    //     $('.main_pro_slide').slick('slickNext')
+    // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
