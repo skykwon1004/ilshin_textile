@@ -9,64 +9,58 @@ $page_slogan = '최고의 기술과 품질을 바탕으로 좋은 제품을 만�
 include '../../../common.php';
 include_once(G5_THEME_PATH . '/head.php');
 ?>
-                    <div class="sub_menubar">
-                        <div class="inner">
-                            <div class="home">
-                                <a href="/"><i class="xi-home"></i></a>
-                            </div>
-                            <div class="sub_gnb">
-                                <ul>
-                                    <li><a href="<?= G5_THEME_URL ?>/doc/m011.php">기업소개</a></li>
-                                    <li><a href="<?= G5_THEME_URL ?>/doc/m021.php">제품소개</a></li>
-                                    <li><a href="<?= G5_THEME_URL ?>/doc/m031.php">투자정보</a></li>
-                                    <li><a href="<?= G5_THEME_URL ?>/doc/m041.php">윤리경영</a></li>
-                                    <li><a href="<?= G5_THEME_URL ?>/doc/m051.php">채용정보</a></li>
-                                    <li><a href="<?= G5_THEME_URL ?>/doc/m061.php">고객지원</a></li>
-                                </ul>
-                                <div class="btn">
-                                    <?= $cate_title ?><i class="xi-angle-down"></i>
-                                </div>
-                            </div>
-                            <div class="sub_gnb">
-                                <ul>
-                                    <li><a href="<?= G5_THEME_URL ?>/doc/m021.php">제품소개</a></li>
-                                    <li><a href="<?= G5_THEME_URL ?>/doc/m022.php">원사</a></li>
-                                    <li><a href="<?= G5_THEME_URL ?>/doc/m023.php">직물</a></li>
-                                    <li><a href="<?= G5_THEME_URL ?>/doc/m024.php">염색</a></li>
-                                    <li><a href="<?= G5_THEME_URL ?>/doc/m025.php">공정소개</a></li>
-                                    <li><a href="/bbs/board.php?bo_table=notice">샘플북</a></li>
-                                </ul>
-                                   
-                                <div class="btn btn02">
-                                    <?= $page_title ?><i class="xi-angle-down"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="subContainer">
-                <div class="content">
+                    
                     <div class="text">
-                        <h2 class="con_text_h2"><?= $page_title ?></h2>
-                        <p>우리와 늘 함께하는 좋은 실을 만듭니다.
-                        </p>
-                    </div>
-                    <div class="content_clients sec">
-                        <div class="inner">
-                            <div class="clients_list">
-                                <figure class="clients_itm">
-                                    <img src="<?= G5_THEME_URL ?>/img/thumb_client_01.png" alt="">
-                                    <img src="<?= G5_THEME_URL ?>/img/thumb_client_02.png" alt="">
-                                    <img src="<?= G5_THEME_URL ?>/img/thumb_client_03.png" alt="">
-                                    <img src="<?= G5_THEME_URL ?>/img/thumb_client_04.png" alt="">
-                                    <img src="<?= G5_THEME_URL ?>/img/thumb_client_05.png" alt="">
-                                </figure>
-                                
+                            <h2 class="con_text_h2">제품소개</h2>
+                            <p>일신의 제품은 세계 시장에서 우수한 품질을 인정받고 있습니다.
+                            </p>
+                        </div>
+                        <div class="content_product">
+                            <div class="inner">
+                                <div class="product_list">
+                                    <div class="product_itm">
+                                        <figure>
+                                            <img src="<?= G5_THEME_URL ?>/img/sub_pro01.jpg" alt="">
+                                            <div class="product_itm_tit">
+                                                <strong>Yarn</strong>
+                                                <h3>원사</h3>
+                                                <a href="" class="more">MORE VIEW</a>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="product_itm">
+                                        <figure>
+                                            <img src="<?= G5_THEME_URL ?>/img/sub_pro02.jpg" alt="">
+                                            <div class="product_itm_tit">
+                                                <strong>Textile</strong>
+                                                <h3>직물</h3>
+                                                <a href="" class="more">MORE VIEW</a>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="product_itm">
+                                        <figure>
+                                            <img src="<?= G5_THEME_URL ?>/img/sub_pro03.jpg" alt="">
+                                            <div class="product_itm_tit">
+                                                <strong>Dyeing</strong>
+                                                <h3>염색</h3>
+                                                <a href="" class="more">MORE VIEW</a>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <div class="pro_contact">
+                        <div class="pro_contact_tit">
+                            <strong>자세한 상담을 원하시나요?</strong>
+                            <span>제품에 대해 궁금한 사항은 언제든지 문의 바랍니다.</span>
+                            <a href="">제품문의 바로가기</a>
+                        </div>
+                    </div>
+                </div>
 
 
 

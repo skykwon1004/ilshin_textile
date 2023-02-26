@@ -99,22 +99,33 @@ $(function () {
         // $(this).prev() : 내가 클릭한 것 전에꺼 (ul이 두개니깐 this안하면 ul 두개 다 선택됨)
     })
 
+    
 
 
-    // $('.yarn_slide').slick({
-    //     arrows: true,
-    //     dots: false,
-    //     slidesToShow: 5,
-    // });
 
-    // $('.mainProduct .arrows .prev').on('click', function () {
-    //     $('.main_pro_slide').slick('slickPrev')
-    // });
+    $('.sample_slide').slick({
+        arrows: false,
+        // centerMode: true,
+        // centerPadding: '300px',
+        dots: false,
+    });
 
-    // $('.mainProduct .arrows .next').on('click', function () {
-    //     $('.main_pro_slide').slick('slickNext')
-    // });
+    $('.content_samplebook .arrows i:first-child').on('click', function () {
+        $('.sample_slide').slick('slickPrev')
+    });
 
+    $('.content_samplebook .arrows i:last-child').on('click', function () {
+        $('.sample_slide').slick('slickNext')
+    });
+
+    $('.content_samplebook .sample_list>li').on('click', function () {
+        var idx = $(this).index();
+        $('.content_samplebook .sample_con>div').removeClass('on');
+        $('.content_samplebook .sample_con>div').eq(idx).addClass('on');
+
+        $('.content_samplebook .sample_list>li').removeClass('on');
+        $(this).addClass('on');
+    })
 
 
 
