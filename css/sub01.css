@@ -717,6 +717,82 @@
     margin: 100px 0 -100px 0;
 }
 
-/* .inner {
-    outline: 1px solid red;
-} */
+
+/* sub04_1 */
+.content_management {
+    text-align: center;
+    line-height: 1.4;
+    padding: 100px 0 0 0;
+    border-top: 1px solid #eee;
+}
+
+.content_management strong {
+    display: block;
+    font-size: 31px;
+    font-weight: 300;
+    color: red;
+}
+
+.content_management span {
+    display: block;
+    font-size: 31px;
+    font-weight: 300;
+    margin: 0 0 60px 0;
+}
+
+.content_management p {
+    font-size: 19px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    word-break: keep-all;
+
+    width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.content_management em {
+    display: block;
+    font-size: 27px;
+    font-weight: 300;
+}
+
+.content_management em b {
+    font-weight: 500;
+}
+
+/* sub04_2 */
+.content_tipoff h3 {
+    font-size: 17px;
+    margin: 0 0 60px 0;
+    line-height: 60px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.content_tipoff strong {
+    display: block;
+    color: red;
+    margin: 0 0 10px 0;
+
+}
+
+.content_tipoff ul li {
+    line-height: 1.45;
+    word-break: keep-all;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.content_tipoff ul li:last-child {
+    margin: 0 0 60px 0;
+}
+
+.tipoff_go {
+    text-align: center;
+}
+
+.tipoff_go a {
+    padding: 15px 50px;
+    background: #ffd400;
+
+}
