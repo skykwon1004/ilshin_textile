@@ -762,7 +762,7 @@
 
 /* sub04_2 */
 .content_tipoff h3 {
-    font-size: 17px;
+    font-size: 19px;
     margin: 0 0 60px 0;
     line-height: 60px;
     text-align: center;
@@ -795,4 +795,128 @@
     padding: 15px 50px;
     background: #ffd400;
 
+}
+
+/* sub05_2 */
+.content_person h3 {
+    font-size: 19px;
+    margin: 0 0 60px 0;
+    line-height: 60px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.content_person p {
+    word-break: keep-all;
+    width: 900px;
+    margin: 0 auto 60px auto;
+    line-height: 1.45;
+    text-align: center;
+    font-weight: 300;
+}
+
+.person_education {
+    width: 1200px;
+    margin: 0 auto 100px auto;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.person_education_itm {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 599px;
+    padding: 50px 80px;
+}
+
+.person_education_itm:nth-child(2) {
+    background: #f9f9f9;
+}
+
+.person_education_itm:nth-child(3) {
+    background: #f9f9f9;
+}
+
+.person_education_itm:nth-child(6) {
+    background: #f9f9f9;
+}
+
+.person_education_itm i {
+    font-size: 45px;
+}
+
+.person_education_itm dl {
+    margin: 0 0 0 50px;
+    /* outline: 1px solid red; */
+    min-height: 100px;
+}
+
+.person_education_itm dl>dt {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 20px -10px;
+}
+
+.person_education_itm dl>dd {
+    position: relative;
+    margin: 0 0 10px 0;
+}
+
+.person_education_itm dl>dd::after {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    content: "";
+    width: 2px;
+    height: 2px;
+    background: #444;
+}
+
+.person_Benefit {
+    width: 1200px;
+    margin: 0 auto 100px auto;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.person_Benefit_itm {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 1200px;
+    padding: 50px 100px;
+}
+
+.person_Benefit_itm i {
+    font-size: 45px;
+}
+
+.person_Benefit_itm dl {
+    margin: 0 0 0 50px;
+    /* outline: 1px solid red; */
+    min-height: 100px;
+}
+
+.person_Benefit_itm dl>dt {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 20px -10px;
+}
+
+.person_Benefit_itm dl>dd {
+    position: relative;
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    word-break: keep-all;
+}
+
+.person_Benefit_itm dl>dd::after {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    content: "";
+    width: 2px;
+    height: 2px;
+    background: #444;
 }
