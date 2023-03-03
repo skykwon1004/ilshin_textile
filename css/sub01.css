@@ -763,15 +763,18 @@
 /* sub04_2 */
 .content_tipoff h3 {
     font-size: 19px;
-    margin: 0 0 60px 0;
+    margin: 0 0 40px 0;
     line-height: 60px;
     text-align: center;
     background: #f9f9f9;
+    border-top: 2px solid var(--mc);
+    color: var(--mc);
+    border-bottom: 1px solid #eee;
 }
 
 .content_tipoff strong {
     display: block;
-    color: red;
+    color: var(--mc);
     margin: 0 0 10px 0;
 
 }
@@ -800,19 +803,22 @@
 /* sub05_2 */
 .content_person h3 {
     font-size: 19px;
-    margin: 0 0 60px 0;
+    margin: 0 0 40px 0;
     line-height: 60px;
     text-align: center;
     background: #f9f9f9;
+    border-top: 2px solid var(--mc);
+    color: var(--mc);
+    border-bottom: 1px solid #eee;
 }
 
 .content_person p {
     word-break: keep-all;
     width: 900px;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 40px auto;
     line-height: 1.45;
     text-align: center;
-    font-weight: 300;
+    font-size: 17px;
 }
 
 .person_education {
@@ -885,7 +891,8 @@
     align-items: center;
     float: left;
     width: 1200px;
-    padding: 50px 100px;
+    padding: 50px 150px;
+    border-bottom: 1px solid #eee;
 }
 
 .person_Benefit_itm i {
@@ -896,6 +903,7 @@
     margin: 0 0 0 50px;
     /* outline: 1px solid red; */
     min-height: 100px;
+
 }
 
 .person_Benefit_itm dl>dt {
@@ -907,7 +915,6 @@
 .person_Benefit_itm dl>dd {
     position: relative;
     margin: 0 0 10px 0;
-    font-size: 15px;
     word-break: keep-all;
 }
 
@@ -919,4 +926,44 @@
     width: 2px;
     height: 2px;
     background: #444;
+}
+
+/* sub_06_1 */
+.content_contact .contact_table {
+    text-align: center;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 1200px;
+    border: 1px solid #ddd;
+}
+
+.tg td {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.tg th {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 10px 5px;
+}
+
+.tg .tg-z2sm {
+    background-color: #eaf6fc;
+    border-color: inherit;
+    padding: 30px 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tg .tg-0pky {
+    border-color: inherit;
+}
+
+thead {
+    border-top: 2px solid #999;
 }

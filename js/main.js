@@ -35,7 +35,7 @@ $(function () {
     $('.main_slide').slick({
         fade: true,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         pauseOnHover: false,
         pauseOnFocus: false,
@@ -69,6 +69,14 @@ $(function () {
         centerMode: true,
         centerPadding: '300px',
         dots: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    centerPadding: '0',
+                }
+            }
+        ]
     });
 
     $('.product_slide').on('init reInit afterChange', function (e, s, c) {
@@ -99,7 +107,7 @@ $(function () {
         // $(this).prev() : 내가 클릭한 것 전에꺼 (ul이 두개니깐 this안하면 ul 두개 다 선택됨)
     })
 
-    
+
 
 
 
