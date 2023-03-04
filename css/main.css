@@ -37,6 +37,7 @@ a {
     margin: 0 auto;
 }
 
+
 @media (max-width:768px) {
     .inner {
         flex-direction: column;
@@ -695,20 +696,42 @@ body.on::-webkit-scrollbar {
 }
 
 @media (max-width:768px) {
-    .mainBrand .tit {
+    .mainBrand .inner {
+        display: flex;
         text-align: center;
     }
 
+    .mainBrand .inner>* {
+        flex: none;
+    }
+
     .mainBrand .br_left {
-        padding: 30px 50px;
+        padding: 0;
         display: flex;
         flex: 1;
         flex-direction: column;
         justify-content: center;
     }
 
+    .mainBrand .br_left .tit {
+        margin: 0 0 30px 0;
+    }
 
+    .mainBrand .tit strong {
+        display: block;
+        font-size: 47px;
+        font-weight: 500;
+        margin: 0 0 30px 0;
+    }
 
+    .mainBrand .tit span {
+        display: block;
+        font-size: 17px;
+        margin: 0 0 30px 0;
+        line-height: 1.45;
+        color: #707070;
+        word-break: keep-all;
+    }
 }
 
 
@@ -807,7 +830,10 @@ body.on::-webkit-scrollbar {
 }
 
 @media (max-width:768px) {
-    .mainProducts {
+
+
+    /* --- */
+    /* .mainProducts {
         position: relative;
         padding: 100px 0;
     }
@@ -817,7 +843,7 @@ body.on::-webkit-scrollbar {
     }
 
     .mainProducts .content {
-        position: static;
+        position: absolute;
         bottom: 0;
         left: 0;
         transform: translate(0, 0);
@@ -879,6 +905,110 @@ body.on::-webkit-scrollbar {
 
     .mainProducts .arrows i:nth-child(2) {
         margin: 0 0 0 33px;
+    } */
+
+    /* ----- */
+
+    .mainProducts {
+        position: relative;
+        padding: 100px 0 150px 0;
+    }
+
+    /* .pro_list {
+        
+        width: auto;
+        padding: 0 15px;
+        outline: 1px solid red;
+        height: 100px;
+    } */
+
+    .mainProducts .product_slide figure {
+        filter: grayscale(0) brightness(0);
+    }
+
+    .mainProducts .product_slide figure.slick-center {
+        filter: grayscale(0);
+    }
+
+    .mainProducts .product_slide figure img {
+        margin: 0 0;
+
+    }
+
+    .mainProducts .content {
+        display: none;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(150%, 0);
+        margin: 0 0 0 -600px;
+        width: 400px;
+        background: #fff;
+        border: 1px solid #eee;
+        margin: 0 0 0 -500px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .mainProducts .port {
+        display: none;
+        padding: 50px 40px 50px 40px;
+        text-align: left;
+    }
+
+    .mainProducts .port.on {
+        display: block;
+    }
+
+    .mainProducts .tit_e {
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--mc);
+        margin: 0 0 10px 0;
+        text-indent: 4px;
+    }
+
+    .mainProducts .tit {
+        font-size: 31px;
+        font-weight: 500;
+        margin: 0 0 20px 0;
+    }
+
+    .mainProducts .desc {
+        line-height: 1.4;
+        word-break: keep-all;
+        margin: 0 0 30px 0;
+        min-height: 50px;
+        font-weight: 300;
+    }
+
+    .mainProducts .pro_list {
+        position: relative;
+    }
+
+    .mainProducts .arrows i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        cursor: pointer;
+        padding: 15px 30px;
+
+        color: #fff;
+        background: rgb(0, 0, 0, 0.5);
+        transition: 0.5s;
+    }
+
+    .mainProducts .arrows i:hover {
+        background: var(--mc);
+    }
+
+    .mainProducts .arrows i:nth-child(1) {
+        margin: 0 0 0 -620px;
+    }
+
+    .mainProducts .arrows i:nth-child(2) {
+        margin: 0 0 0 620px;
     }
 }
 

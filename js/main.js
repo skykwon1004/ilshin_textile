@@ -64,7 +64,7 @@ $(function () {
 
 
     // mainProducts
-    $('.product_slide').slick({
+    $('.product_slide ').slick({
         arrows: false,
         centerMode: true,
         centerPadding: '300px',
@@ -73,9 +73,12 @@ $(function () {
             {
                 breakpoint: 768,
                 settings: {
-                    centerPadding: '0',
+                    infinite: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+
                 }
-            }
+            },
         ]
     });
 
