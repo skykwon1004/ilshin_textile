@@ -73,10 +73,8 @@ $(function () {
             {
                 breakpoint: 768,
                 settings: {
-                    infinite: false,
                     centerMode: true,
-                    centerPadding: '0px',
-
+                    centerPadding: '0',
                 }
             },
         ]
@@ -216,6 +214,7 @@ $(function () {
             e.preventDefault();
         };
     });
+
 
 
 
