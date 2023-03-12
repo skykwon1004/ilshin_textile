@@ -117,6 +117,14 @@ $(function () {
         // centerMode: true,
         // centerPadding: '300px',
         dots: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     $('.content_samplebook .arrows i:first-child').on('click', function () {
@@ -137,7 +145,22 @@ $(function () {
     })
 
 
+    // $('.sample_list').slick({
+    //     slidesToShow: 4,
+    //     mobileFirst: true,
+    //     arrows: true,
+    //     dots: false,
+    //     responsive: [
+    //         {
+    //             breakpoint: 768,
+    //             settings: 'unslick'
+    //         }
+    //     ]
+    // });
 
+    // $(window).on('resize', function () {
+    //     $('.sample_list').slick('resize');
+    // });
 
 
 
