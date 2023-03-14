@@ -163,7 +163,11 @@ $(function () {
     // });
 
 
-
+    $('.header').on('scroll wheel touchmove', function () {
+        if ($(this).hasClass('on')) {
+            return false;
+        }
+    });
 
 
 

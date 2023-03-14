@@ -1583,5 +1583,42 @@ thead {
 }
 
 @media (max-width:768px) {
-    contact_table
+    .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        word-break: keep-all;
+        line-height: 1.3;
+    }
+    
+    .tg td {
+        border: 1px solid #ddd;
+        overflow: hidden;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .tg th {
+        border: 1px solid #ddd;
+        overflow: hidden;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .tg .tg-z2sm {
+        background-color: #eaf6fc;
+        border-color: inherit;
+        padding: 10px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .tg .tg-0pky {
+        border-color: inherit;
+    }
+    
+    thead {
+        border-top: 2px solid #999;
+    }
 }

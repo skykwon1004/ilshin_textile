@@ -215,6 +215,7 @@ button {
     margin: 0 0 0 840px;
     content: "\e921";
     color: #333;
+    font-size: 21px;
 }
 
 .header .sitemap {
@@ -306,7 +307,6 @@ body.on::-webkit-scrollbar {
     display: none;
 }
 
-
 @media (max-width:768px) {
     .header h1 {
         margin: 0 0 0 30px;
@@ -318,7 +318,6 @@ body.on::-webkit-scrollbar {
         margin: 0 0 0 30px;
     }
 
-    /* 
     .header.on::before {
         content: "";
         position: fixed;
@@ -327,19 +326,18 @@ body.on::-webkit-scrollbar {
         right: 0;
         height: 100vh;
 
-        z-index: 1000;
-        background: rgb(0, 0, 0, 0.8);
-    } */
+        background: rgb(0, 0, 0, 0.5);
+    }
 
     .header.on .head_container .inner {
         height: 100px;
     }
 
-    .header .gnb {
+    .header.on .gnb {
         position: fixed;
         left: -100%;
         top: 0;
-        z-index: 1000;
+        z-index: 99999999;
 
         width: calc(100% - 75px);
         height: 100vh;
@@ -351,11 +349,10 @@ body.on::-webkit-scrollbar {
         transition: 0.5s;
     }
 
-    .header.on .gnb {
+    .header .gnb {
         left: 0;
     }
 
-    /* ---- */
     .header_wrap::after {
         content: "";
         width: 100%;
@@ -1539,7 +1536,7 @@ body.on::-webkit-scrollbar {
         position: fixed;
         bottom: 10px;
         right: 10px;
-        z-index: 2000;
+        z-index: 99999;
     }
 
     .to_top .top {
